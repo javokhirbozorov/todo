@@ -6,7 +6,7 @@ import {addTask} from "../../redux/actions";
 
 
 
-
+const baseURL = 'https://javo-todo.onrender.com/'
 
 function AddTask() {
 
@@ -25,7 +25,7 @@ function AddTask() {
         if(!task.taskName) return alert('Type words');
 
 
-        const response = await fetch(`http://localhost:3001`, {
+        const response = await fetch(baseURL, {
 
             method: "POST",
             headers: {
