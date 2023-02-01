@@ -3,6 +3,8 @@
   "proxy": "http://127.0.0.1:3001",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
+  "main": "index.js",
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
@@ -50,5 +52,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "engines": {
+    "node": "16.18.0",
+    "npm": "8.10.0"
   }
 }
