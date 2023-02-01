@@ -9,8 +9,10 @@
   },
   "scripts": {
     "dev": "nodemon app.js --ext js,jsx",
-    "start": "node app.js",
-    "heroku-postbuild":"cd client && npm install && npm run build"
+
+      "build": "cd client && npm install && npm run build",
+      "start": "nodemon --watch server --exec node --experimental-modules server/server.js"
+
   },
   "keywords": [],
   "author": "",
@@ -30,6 +32,7 @@
     "react-dom": "^18.2.0",
     "sequelize": "^6.23.2",
     "sequelize-cli": "^6.5.1"
+    
   },
   "devDependencies": {
     "eslint": "^8.24.0",
