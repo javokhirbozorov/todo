@@ -9,10 +9,10 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-//todo it runs the project from the build folder
-if(process.env.NODE_ENV === "production"){
-  app.use(express.static('client/build'))
-}
+// //todo it runs the project from the build folder
+// if(process.env.NODE_ENV === "production"){
+//   app.use(express.static('client/build'))
+// }
 
 
 
