@@ -44,4 +44,8 @@ router.delete('/:id', async (req, res) => {
   await Tasklist.destroy({ where: { id } });
   res.status(200).end();
 });
+
+// router.get("*", (req, res) =>{
+//   res.sendFile(path.join(__dirname, "client/build/index.html"));
+// })
 module.exports = router;

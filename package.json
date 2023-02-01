@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "16.18.0",
+    "npm": "8.10.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon app.js --ext js,jsx",
-    "start": "node app.js"
+    "start": "node app.js",
+    "heroku-postbuild":"cd client && npm install && npm run build"
   },
   "keywords": [],
   "author": "",
