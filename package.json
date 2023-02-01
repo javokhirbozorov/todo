@@ -11,7 +11,7 @@
     "dev": "nodemon app.js --ext js,jsx",
 
       "build": "cd client && npm install && npm run build",
-      "start": "nodemon --watch server --exec node --experimental-modules app.js"
+      "start": "node app.js"
 
   },
   "keywords": [],
