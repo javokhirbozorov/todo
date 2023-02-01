@@ -9,9 +9,9 @@ import { editMode } from '../../redux/actions'
 import { saveEdit } from '../../redux/actions'
 import {deleteTask} from '../../redux/actions'
 import './task.css'
-require('dotenv').config();
 
-const PORT = process.env.PORT
+
+
 
 //* make a form 
 //* button type submit
@@ -31,7 +31,7 @@ function Task({ task }) {
             event.preventDefault();
             if(!taskName) return alert('It is empty!');
             
-            const response = await fetch(`http://localhost:${PORT}/${task.id}`, {
+            const response = await fetch(`http://localhost:3001/${task.id}`, {
                 method:'PATCH',
                 headers: {
                     "Content-Type": "application/json",
@@ -59,7 +59,7 @@ function Task({ task }) {
 
     const onDelHandler = async()=>{
         try{
-             await fetch(`http://localhost:${PORT}/${task.id}`,{
+             await fetch(`http://localhost:3001/${task.id}`,{
             method:"DELETE",
             headers:{
                 "Content-Type":"application/json",
@@ -81,7 +81,7 @@ function Task({ task }) {
      
 
         try{
-            await fetch(`http://localhost:${PORT}/tick/${task.id}`, {
+            await fetch(`http://localhost:3001/tick/${task.id}`, {
                 method:'PATCH',
                 headers:{
                     "Content-Type":"application/json",

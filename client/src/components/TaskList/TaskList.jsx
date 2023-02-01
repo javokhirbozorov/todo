@@ -3,10 +3,10 @@ import Task from '../Task/Task'
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import { useDispatch, useSelector } from 'react-redux'
-require('dotenv').config();
 
 
-const PORT = process.env.PORT
+
+
 
 
 function TaskList() {
@@ -15,7 +15,7 @@ function TaskList() {
     const dispatch = useDispatch();
     React.useEffect(() =>{
         (async() =>{
-                const response = await fetch(`http://localhost:${PORT}`, {
+                const response = await fetch(`http://localhost:3001`, {
                     method:'GET',
                     headers:{
                         'Content-Type': 'application/json',

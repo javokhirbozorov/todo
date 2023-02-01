@@ -3,8 +3,10 @@ import {Button, Box, TextField} from "@mui/material";
 import './styles/AddTask.css'
 import {useDispatch} from "react-redux";
 import {addTask} from "../../redux/actions";
-require('dotenv').config();
-const PORT = process.env.PORT
+
+
+
+
 
 function AddTask() {
 
@@ -23,7 +25,7 @@ function AddTask() {
         if(!task.taskName) return alert('Type words');
 
 
-        const response = await fetch(`http://localhost:${PORT}`, {
+        const response = await fetch(`http://localhost:3001`, {
 
             method: "POST",
             headers: {
