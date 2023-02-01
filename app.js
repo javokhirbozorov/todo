@@ -18,7 +18,7 @@ if(process.env.NODE_ENV === "production"){
 
 app.use(cors({
   credentials: true,
-  origin: ['http://localhost:3000', `http://localhost:${PORT}`, `http://localhost:${PORT}/tick`],
+  origin: ['http://localhost:3000', 'http://localhost:3001', 'http://localhost:3001/tick'],
 }));
 const mainRoute = require('./src/routes/mainRoute');
 
