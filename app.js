@@ -27,10 +27,12 @@ app.use(express.json());
 
 const mainRoute = require('./src/routes/mainRoute');
 
-app.use(cors({
-  credentials: true,
-  origin: ['http://localhost:3000', 'http://localhost:3001', 'http:localhost:3001/tick'],
-}));
+app.use(cors())
+
+// app.use(cors({
+//   credentials: true,
+//   origin: ['http://localhost:3000', 'http://localhost:3001', 'http:localhost:3001/tick'],
+// }));
 
 const PORT = process.env.PORT || 3001;
 app.use('/', mainRoute);
