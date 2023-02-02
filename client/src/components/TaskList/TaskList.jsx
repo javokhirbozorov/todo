@@ -15,7 +15,7 @@ function TaskList() {
     const dispatch = useDispatch();
     React.useEffect(() =>{
         (async() =>{
-                const response = await fetch('https://javo-todo.onrender.com/', {
+                const response = await fetch('http://localhost:3001', {
                     method:'GET',
                     headers:{
                         'Content-Type': 'application/json',

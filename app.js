@@ -29,7 +29,7 @@ const mainRoute = require('./src/routes/mainRoute');
 
 app.use(cors({
   credentials: true,
-  origin: ['http://localhost:3000', 'https://javo-todo.onrender.com', 'https://javo-todo.onrender.com/tick'],
+  origin: ['http://localhost:3000', 'http://localhost:3001', 'http:localhost:3001/tick'],
 }));
 
 const PORT = process.env.PORT || 3001;
