@@ -6,7 +6,9 @@ import {addTask} from "../../redux/actions";
 
 
 
-const baseURL = 'http://localhost:3001'
+// const baseURL = 'http://localhost:3001'
+
+const baseURL = 'https://javo-todo.onrender.com/'
 
 function AddTask() {
 

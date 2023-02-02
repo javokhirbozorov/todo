@@ -31,7 +31,7 @@ function Task({ task }) {
             event.preventDefault();
             if(!taskName) return alert('It is empty!');
             
-            const response = await fetch(`http://localhost:3001/${task.id}`, {
+            const response = await fetch(`https://javo-todo.onrender.com/${task.id}`, {
                 method:'PATCH',
                 headers: {
                     "Content-Type": "application/json",
@@ -59,7 +59,7 @@ function Task({ task }) {
 
     const onDelHandler = async()=>{
         try{
-             await fetch(`http://localhost:3001/${task.id}`,{
+             await fetch(`https://javo-todo.onrender.com/${task.id}`,{
             method:"DELETE",
             headers:{
                 "Content-Type":"application/json",
@@ -81,7 +81,7 @@ function Task({ task }) {
      
 
         try{
-            await fetch(`http://localhost:3001/tick/${task.id}`, {
+            await fetch(`https://javo-todo.onrender.com/tick/${task.id}`, {
                 method:'PATCH',
                 headers:{
                     "Content-Type":"application/json",
