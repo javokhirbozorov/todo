@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/javokhirbozorov/todo/static/css/main.7eccd811.css",
+    "main.js": "/javokhirbozorov/todo/static/js/main.b5577e70.js",
+    "index.html": "/javokhirbozorov/todo/index.html",
+    "main.7eccd811.css.map": "/javokhirbozorov/todo/static/css/main.7eccd811.css.map",
+    "main.b5577e70.js.map": "/javokhirbozorov/todo/static/js/main.b5577e70.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7eccd811.css",
+    "static/js/main.b5577e70.js"
+  ]
+}
