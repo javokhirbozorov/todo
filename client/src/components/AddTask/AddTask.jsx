@@ -32,6 +32,7 @@ function AddTask() {
               "Content-Type": "application/json",
             },
             body: JSON.stringify(task),
+            module:'no-cors'
           });
 
 

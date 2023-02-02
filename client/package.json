@@ -1,10 +1,8 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "proxy": "http://127.0.0.1:3001",
   "private": true,
   "main": "index.js",
-  "homepage": "https://github.com/javokhirbozorov/todo/",
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
@@ -31,8 +29,6 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
