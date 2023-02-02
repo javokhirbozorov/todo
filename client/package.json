@@ -4,6 +4,7 @@
   "proxy": "http://127.0.0.1:3001",
   "private": true,
   "main": "index.js",
+  "homepage": "https://github.com/javokhirbozorov/todo/",
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
