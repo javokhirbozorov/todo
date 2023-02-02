@@ -9,10 +9,8 @@
   },
   "scripts": {
     "dev": "nodemon app.js --ext js,jsx",
-
-      "build": "cd client && npm install && npm run build",
-      "start": "node app.js"
-
+    "build": "cd client && npm install && npm run build",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
@@ -32,7 +30,6 @@
     "react-dom": "^18.2.0",
     "sequelize": "^6.23.2",
     "sequelize-cli": "^6.5.1"
-    
   },
   "devDependencies": {
     "eslint": "^8.24.0",
